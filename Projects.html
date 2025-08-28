@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini Projects | Dhinakaran</title>
+    <title>Projects | Dhinakaran</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -68,7 +68,7 @@
       
       .nav-item {
         transition: all 0.3s ease;
-        padding: 0.5rem 1.5rem;
+        padding: 0.5rem ;
         border-radius: 100px;
       }
       
@@ -181,46 +181,43 @@
         animation: float 18s ease-in-out infinite;
       }
       
-      .mini-project-card {
+      .project-card {
         transition: all 0.3s ease;
         background: rgba(255, 255, 255, 0.03);
         border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 16px;
         overflow: hidden;
       }
       
-      .mini-project-card:hover {
+      .project-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
         border-color: rgba(129, 140, 248, 0.3);
       }
       
-      .mini-project-image {
+      .project-image {
         transition: transform 0.5s ease;
-        height: 180px;
-        object-fit: cover;
       }
       
-      .mini-project-card:hover .mini-project-image {
+      .project-card:hover .project-image {
         transform: scale(1.05);
       }
       
-      .mini-project-live-demo {
+      .live-demo-btn {
         background: linear-gradient(90deg, #4ADE80, #22c55e);
         transition: all 0.3s ease;
       }
       
-      .mini-project-live-demo:hover {
+      .live-demo-btn:hover {
         transform: translateY(-2px);
         box-shadow: 0 10px 15px -3px rgba(34, 197, 94, 0.3);
       }
       
-      .mini-project-github {
+      .github-btn {
         background: rgba(0, 0, 0, 0.8);
         transition: all 0.3s ease;
       }
       
-      .mini-project-github:hover {
+      .github-btn:hover {
         background: rgba(0, 0, 0, 1);
         transform: translateY(-2px);
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
@@ -231,20 +228,9 @@
         backdrop-filter: blur(12px);
         border: 1px solid rgba(255, 255, 255, 0.1);
       }
-      
-      .back-button {
-        transition: all 0.3s ease;
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-      }
-      
-      .back-button:hover {
-        background: rgba(255, 255, 255, 0.1);
-        transform: translateX(-5px);
-      }
     </style>
   </head>
-  <body class="min-h-screen flex items-center justify-center p-4 text-white pb-20 md:pb-4">
+  <body class="min-h-screen flex items-center justify-center p-4 text-white">
     <!-- Floating background shapes -->
     <div class="floating-shapes">
       <div class="shape shape-1"></div>
@@ -284,11 +270,11 @@
         </div>
 
         <!-- navbar for laptop start  -->
-        <nav class="rounded-full py-3 hidden md:block bg-gray-800/30 backdrop-blur-md border border-gray-700 animate-slide-up">
-          <ul class="flex items-center justify-around text-gray-300">
+        <nav class="rounded-full py-3 hidden md:block bg-gray-800/30 backdrop-blur-md border border-gray-700 animate-slide-up ">
+          <ul class="flex items-center justify-around text-gray-300 ">
             <li class="nav-item"><a href="./index.html" class="hover:text-white">Home</a></li>
             <li class="nav-item"><a href="./About.html" class="hover:text-white">About</a></li>
-            <li class="nav-item"><a href="./Projects.html" class="hover:text-white">Project</a></li>
+            <li class="nav-item"><a href="./Projects.html" class="text-indigo-300 font-medium">Project</a></li>
             <li class="nav-item"><a href="./Resume.html" class="hover:text-white">Resume</a></li>
             <li class="nav-item"><a href="./Tools.html" class="hover:text-white">Tools</a></li>
             <li class="nav-item"><a href="./Ama.html" class="hover:text-white">AMA</a></li>
@@ -296,49 +282,43 @@
         </nav>
 
         <!-- navbar for mobile start  -->
-        <nav class="mobile-nav rounded-full py-4 block md:hidden fixed bottom-5 inset-x-0 w-[90%] md:w-[65%] mx-auto z-10 animate-fade-in">
+        <nav class="mobile-nav rounded-full py-4 block md:hidden fixed bottom-4 inset-x-0 w-[90%] md:w-[65%] mx-auto z-12 animate-fade-in">
           <ul class="flex items-center justify-around text-gray-300 text-sm">
-            <li class="nav-item"><a href="./index.html" class="hover:text-white"><i class="fas fa-home mr-1"></i></a></li>
-            <li class="nav-item"><a href="./About.html" class="hover:text-white"><i class="fas fa-user mr-1"></i></a></li>
-            <li class="nav-item"><a href="./Projects.html" class="hover:text-white"><i class="fas fa-project-diagram mr-1"></i></a></li>
-            <li class="nav-item"><a href="./Resume.html" class="hover:text-white"><i class="fas fa-file-alt mr-1"></i></a></li>
-            <li class="nav-item"><a href="./Tools.html" class="hover:text-white"><i class="fas fa-tools mr-1"></i></a></li>
-            <li class="nav-item"><a href="./Ama.html" class="hover:text-white"><i class="fas fa-comments mr-1"></i></a></li>
+            <li class="nav-item"><a href="index.html" class="hover:text-white"><i class="fas fa-home mr-1"></i></a></li>
+            <li class="nav-item"><a href="About.html" class="hover:text-white"><i class="fas fa-user mr-1"></i></a></li>
+            <li class="nav-item"><a href="Projects.html" class="text-indigo-300 font-medium"><i class="fas fa-project-diagram mr-1"></i></a></li>
+            <li class="nav-item"><a href="Resume.html" class="hover:text-white"><i class="fas fa-file-alt mr-1"></i></a></li>
+            <li class="nav-item"><a href="Tools.html" class="hover:text-white"><i class="fas fa-tools mr-1"></i></a></li>
+            <li class="nav-item"><a href="Ama.html" class="hover:text-white"><i class="fas fa-comments mr-1"></i></a></li>
           </ul>
         </nav>
 
-        <!-- Back button and header -->
-        <div class="flex items-center justify-between animate-slide-up">
-          <a href="Projects.html" class="back-button py-2 px-4 rounded-full text-gray-300 hover:text-white flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transform transition-transform hover:-translate-x-1">
-              <path d="M19 12H5M12 19l-7-7 7-7"/>
-            </svg>
-            Back to Projects
-          </a>
-          
-          <div class="text-right">
-            <h1 class="text-3xl md:text-4xl font-bold text-white">Mini <span class="gradient-text">Projects</span></h1>
-            <p class="text-gray-400">Small experiments and fun projects</p>
-          </div>
+        <!-- Projects Section -->
+        <section>
+          <!-- Projects header -->
+        <div class="animate-slide-up">
+          <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">My <span class="gradient-text">Projects</span></h1>
+          <p class="text-gray-400">A collection of my recent work and creative endeavors</p>
         </div>
 
-        <!-- Mini projects grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-slide-up">
+        <!-- card section  -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-slide-up mt-5">
           <!-- Project 1 -->
-          <div class="mini-project-card rounded-xl p-5 flex flex-col gap-4">
+          <div class="project-card rounded-xl p-5 flex flex-col gap-4">
             <div class="overflow-hidden rounded-xl">
-              <img
-                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                alt="Calculator App"
-                class="rounded-xl mini-project-image w-full"
-              />
+              <video class="rounded-xl project-image  h-48 object-cover" src="./images,videos/cognifyz.mp4" autoplay></video>
+
             </div>
-            <h3 class="text-xl font-bold text-white">Calculator App</h3>
+
             <p class="text-gray-300 flex-grow">
-              A sleek calculator with basic arithmetic operations and a modern UI design.
+              A landing Page for Cognifyz Technologies in the internship Period.
             </p>
+
             <div class="flex items-center flex-wrap gap-3">
-              <a href="#" class="mini-project-live-demo py-2 px-3 rounded-lg text-white flex items-center gap-1 flex-1 justify-center">
+              
+                <button
+                class="live-demo-btn py-2 px-3 rounded-lg text-white flex items-center gap-1 flex-1 justify-center"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -353,9 +333,15 @@
                   <path d="M13 5H19V11"></path>
                   <path d="M19 5L5 19"></path>
                 </svg>
-                Live Demo
-              </a>
-              <a href="#" class="mini-project-github py-2 px-3 rounded-lg text-white flex items-center justify-center gap-1 flex-1">
+                <a class=" w-[90%]" href="https://dhinakaran-5.github.io/Cognifyz/">
+                LiveLink</a>
+              </button>
+              
+              
+              
+                <button
+                class="github-btn py-2 px-3 rounded-lg text-white flex items-center justify-center gap-1 flex-1"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -372,26 +358,28 @@
                   ></path>
                   <path d="M9 18c-4.51 2-5-2-7-2"></path>
                 </svg>
-                Code
-              </a>
+                 <a href="https://github.com/dhinakaran-5/Cognifyz.git">Github</a>
+              </button>
+             
             </div>
           </div>
 
           <!-- Project 2 -->
-          <div class="mini-project-card rounded-xl p-5 flex flex-col gap-4">
+<div class="project-card rounded-xl p-5 flex flex-col gap-4">
             <div class="overflow-hidden rounded-xl">
-              <img
-                src="https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="Weather App"
-                class="rounded-xl mini-project-image w-full"
-              />
+              <video class="rounded-xl project-image  h-48 object-cover" src="./images,videos/Food.mp4" autoplay></video>
+
             </div>
-            <h3 class="text-xl font-bold text-white">Weather App</h3>
+
             <p class="text-gray-300 flex-grow">
-              Get current weather information and forecasts for any location around the world.
+              A Food Store Page Frontend with Add to cart functionality.
             </p>
+
             <div class="flex items-center flex-wrap gap-3">
-              <a href="#" class="mini-project-live-demo py-2 px-3 rounded-lg text-white flex items-center gap-1 flex-1 justify-center">
+              
+                <button
+                class="live-demo-btn py-2 px-3 rounded-lg text-white flex items-center gap-1 flex-1 justify-center"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -406,9 +394,15 @@
                   <path d="M13 5H19V11"></path>
                   <path d="M19 5L5 19"></path>
                 </svg>
-                Live Demo
-              </a>
-              <a href="#" class="mini-project-github py-2 px-3 rounded-lg text-white flex items-center justify-center gap-1 flex-1">
+                <a class=" w-[90%]" href="https://dhinakaran-5.github.io/Spicehub/">
+                LiveLink</a>
+              </button>
+              
+              
+              
+                <button
+                class="github-btn py-2 px-3 rounded-lg text-white flex items-center justify-center gap-1 flex-1"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -425,185 +419,28 @@
                   ></path>
                   <path d="M9 18c-4.51 2-5-2-7-2"></path>
                 </svg>
-                Code
-              </a>
+                 <a href="https://github.com/dhinakaran-5/Spicehub.git">Github</a>
+              </button>
+             
             </div>
           </div>
 
           <!-- Project 3 -->
-          <div class="mini-project-card rounded-xl p-5 flex flex-col gap-4">
+   <div class="project-card rounded-xl p-5 flex flex-col gap-4">
             <div class="overflow-hidden rounded-xl">
-              <img
-                src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
-                alt="Quiz App"
-                class="rounded-xl mini-project-image w-full"
-              />
-            </div>
-            <h3 class="text-xl font-bold text-white">Quiz App</h3>
-            <p class="text-gray-300 flex-grow">
-              Test your knowledge with this interactive quiz application with multiple categories.
-            </p>
-            <div class="flex items-center flex-wrap gap-3">
-              <a href="#" class="mini-project-live-demo py-2 px-3 rounded-lg text-white flex items-center gap-1 flex-1 justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M13 5H19V11"></path>
-                  <path d="M19 5L5 19"></path>
-                </svg>
-                Live Demo
-              </a>
-              <a href="#" class="mini-project-github py-2 px-3 rounded-lg text-white flex items-center justify-center gap-1 flex-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
-                  ></path>
-                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                </svg>
-                Code
-              </a>
-            </div>
-          </div>
+              <video class="rounded-xl project-image  h-48 object-cover" src=/cognifyz.mp4" autoplay></video>
 
-          <!-- Project 4 -->
-          <div class="mini-project-card rounded-xl p-5 flex flex-col gap-4">
-            <div class="overflow-hidden rounded-xl">
-              <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="Drawing App"
-                class="rounded-xl mini-project-image w-full"
-              />
             </div>
-            <h3 class="text-xl font-bold text-white">Drawing App</h3>
-            <p class="text-gray-300 flex-grow">
-              A simple canvas-based drawing application with color picker and brush size options.
-            </p>
-            <div class="flex items-center flex-wrap gap-3">
-              <a href="#" class="mini-project-live-demo py-2 px-3 rounded-lg text-white flex items-center gap-1 flex-1 justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M13 5H19V11"></path>
-                  <path d="M19 5L5 19"></path>
-                </svg>
-                Live Demo
-              </a>
-              <a href="#" class="mini-project-github py-2 px-3 rounded-lg text-white flex items-center justify-center gap-1 flex-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
-                  ></path>
-                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                </svg>
-                Code
-              </a>
-            </div>
-          </div>
 
-          <!-- Project 5 -->
-          <div class="mini-project-card rounded-xl p-5 flex flex-col gap-4">
-            <div class="overflow-hidden rounded-xl">
-              <img
-                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="Code Editor"
-                class="rounded-xl mini-project-image w-full"
-              />
-            </div>
-            <h3 class="text-xl font-bold text-white">Mini Code Editor</h3>
             <p class="text-gray-300 flex-grow">
-              A lightweight code editor with syntax highlighting for HTML, CSS, and JavaScript.
+              A Complete React Project (Instagram Clone)
             </p>
-            <div class="flex items-center flex-wrap gap-3">
-              <a href="#" class="mini-project-live-demo py-2 px-3 rounded-lg text-white flex items-center gap-1 flex-1 justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M13 5H19V11"></path>
-                  <path d="M19 5L5 19"></path>
-                </svg>
-                Live Demo
-              </a>
-              <a href="#" class="mini-project-github py-2 px-3 rounded-lg text-white flex items-center justify-center gap-1 flex-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path
-                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
-                  ></path>
-                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                </svg>
-                Code
-              </a>
-            </div>
-          </div>
 
-          <!-- Project 6 -->
-          <div class="mini-project-card rounded-xl p-5 flex flex-col gap-4">
-            <div class="overflow-hidden rounded-xl">
-              <img
-                src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt="Recipe App"
-                class="rounded-xl mini-project-image w-full"
-              />
-            </div>
-            <h3 class="text-xl font-bold text-white">Recipe Finder</h3>
-            <p class="text-gray-300 flex-grow">
-              Find delicious recipes based on ingredients you have. Filter by cuisine and dietary restrictions.
-            </p>
             <div class="flex items-center flex-wrap gap-3">
-              <a href="#" class="mini-project-live-demo py-2 px-3 rounded-lg text-white flex items-center gap-1 flex-1 justify-center">
+              
+                <button
+                class="live-demo-btn py-2 px-3 rounded-lg text-white flex items-center gap-1 flex-1 justify-center"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -618,9 +455,15 @@
                   <path d="M13 5H19V11"></path>
                   <path d="M19 5L5 19"></path>
                 </svg>
-                Live Demo
-              </a>
-              <a href="#" class="mini-project-github py-2 px-3 rounded-lg text-white flex items-center justify-center gap-1 flex-1">
+                <a class=" w-[90%]" href="https://dhinakaran-5.github.io/Cognifyz/">
+                LiveLink</a>
+              </button>
+              
+              
+              
+                <button
+                class="github-btn py-2 px-3 rounded-lg text-white flex items-center justify-center gap-1 flex-1"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -637,14 +480,77 @@
                   ></path>
                   <path d="M9 18c-4.51 2-5-2-7-2"></path>
                 </svg>
-                Code
-              </a>
+                 <a href="https://github.com/dhinakaran-5/Cognifyz.git">Github</a>
+              </button>
+             
             </div>
           </div>
         </div>
+        </section>
+
+
+        <!-- Mini projects section -->
+         <section>
+                         <div class="animate-slide-up mt-5">
+          <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">My <span class="gradient-text">Mini Projects</span></h1>
+          <p class="text-gray-400">A collection of my Mini works</p>
+        </div>
+
+           <div class="project-card  rounded-xl p-5 flex flex-col gap-4 mt-5">
+
+            <div class="flex items-center flex-wrap gap-3 ">
+              
+                <button
+                class="live-demo-btn py-2 px-3 rounded-lg text-white flex items-center gap-1 flex-1 justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M13 5H19V11"></path>
+                  <path d="M19 5L5 19"></path>
+                </svg>
+               
+                LiveLinks
+              </button>
+              
+              
+              
+          
+             
+            </div>
+             <a class="hover:text-[blue] transtion-all duration-300" href="https://wikipediasss.ccbp.tech">1) Wikipedia Search </a>
+             <a class="hover:text-[blue] transtion-all duration-300" href="https://speedtypecalc.ccbp.tech/">2) Speed Type Calculator </a>
+            <a class="hover:text-[blue] transtion-all duration-300" href="https://switchcatlightt.ccbp.tech">3) Switch Cat light </a>
+            
+            
+            <a class="hover:text-[blue] transtion-all duration-300" href="https://dhinakaran-5.github.io/Cognizfy-Task-L-1-T-2/">4) Simple Calculator  </a>
+            <a class="hover:text-[blue] transtion-all duration-300" href="https://dhinakaran-5.github.io/Cognizfy-Task-L-2-T-1/">5) Responsive </a>
+            <a class="hover:text-[blue] transtion-all duration-300" href="https://dhinakaran-5.github.io/Cognizfy-Task-L-3-T-1/">6) Image animations </a>
+            <a class="hover:text-[blue] transtion-all duration-300" href="https://gorestconsoleu.ccbp.tech/">7) GO rest Console </a>
+
+
+            <a class="hover:text-[blue]" href="https://cinimaticket.ccbp.tech">8) Cinema Ticket </a>
+            <a class="hover:text-[blue]" href="https://instacloned.ccbp.tech">9) Instacloned UI </a>
+          
+        </div>
+         </section>
+
+
+         <!-- AI projects section -->
+
+
+
 
         <!-- footer section  -->
-        <footer class="flex flex-col md:flex-row items-center mb-20 justify-between pt-8 pb-4 border-t border-gray-700 animate-fade-in">
+        <footer class="flex flex-col md:flex-row items-center justify-between mb-20 pt-8 pb-4 border-t border-gray-700 animate-fade-in">
           <div class="mb-4 md:mb-0">
             <p class="text-gray-400">© 2025 by Dhina. All rights reserved.</p>
           </div>
@@ -720,22 +626,13 @@
     <script>
       // Add some interactive animations
       document.addEventListener('DOMContentLoaded', function() {
-        // Animate skill bars
-        const skillBars = document.querySelectorAll('.skill-progress');
-        skillBars.forEach(bar => {
-          const width = bar.getAttribute('data-width');
-          setTimeout(() => {
-            bar.style.width = width;
-          }, 500);
+        // Add animation delay to project cards
+        const projectCards = document.querySelectorAll('.project-card');
+        projectCards.forEach((card, index) => {
+          card.style.animationDelay = `${index * 0.1}s`;
         });
         
-        // Add animation delay to timeline items
-        const timelineItems = document.querySelectorAll('.timeline-item');
-        timelineItems.forEach((item, index) => {
-          item.style.animationDelay = `${index * 0.2}s`;
-        });
-        
-        // Add hover effect to the resume header
+        // Add hover effect to the project header
         const heading = document.querySelector('h1');
         heading.addEventListener('mouseover', function() {
           this.classList.add('animate-pulse-slow');
